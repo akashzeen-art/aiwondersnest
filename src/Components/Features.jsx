@@ -7,7 +7,6 @@ import {
 import { FaWandMagicSparkles, FaWaveSquare } from "react-icons/fa6";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations/translations";
-import herovideo from "../assets/Images/herovideo1.mp4";
 import Navbar from "./Navbar";
 
 const Features = () => {
@@ -34,7 +33,14 @@ const Features = () => {
   return (
     <>
       <Navbar />
-      <video className={styles.videoBackground} src={herovideo} autoPlay muted loop playsInline />
+      <video
+        className={styles.videoBackground}
+        src="https://vz-347babc2-229.b-cdn.net/3d76d99b-4f63-42bd-8478-d1d460f2e10d/play_480p.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
       <div className={styles.videoOverlay} />
       <main className={styles.page}>
       {/* Hero */}
